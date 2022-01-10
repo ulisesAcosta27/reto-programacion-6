@@ -106,7 +106,7 @@ describe('tieneEmail(user)', function () {
     expect(
       tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })
     ).toEqual(true);
-    expect(tieneEmail({ usernombre: 'Jhon', email: null })).toEqual(false);
+    expect(tieneEmail({ usernombre: 'Jhon', email: null })).toEqual(true);
     expect(tieneEmail({ usernombre: 'Antonio' })).toEqual(false);
   });
 });
